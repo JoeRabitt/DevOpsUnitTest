@@ -30,4 +30,39 @@ public class RomanNumeralConverterTest {
     public void convertToRoman_Numeral5_ReturnsV() {
         assertEquals("V", RomanNumeralConverter.convertToRoman(5));
     }
+
+    @Test
+    public void convertToRoman_Numeral9_ReturnsIX() {
+        assertEquals("IX", RomanNumeralConverter.convertToRoman(9));
+    }
+
+    @Test
+    public void convertToRoman_Numeral10_ReturnsX() {
+        assertEquals("X", RomanNumeralConverter.convertToRoman(10));
+    }
+
+    @Test
+    public void convertToRoman_Numeral21_ReturnsXXI() {
+        assertEquals("XXI", RomanNumeralConverter.convertToRoman(21));
+    }
+
+    @Test
+    public void convertToRoman_Numeral50_ReturnsL() {
+        assertEquals("L", RomanNumeralConverter.convertToRoman(50));
+    }
+
+    @Test
+    public void convertToRoman_Numeral100_ReturnsC() {
+        assertEquals("C", RomanNumeralConverter.convertToRoman(100));
+    }
+
+    @Test
+    public void convertToRoman_Numeral500_ReturnsD() {
+        assertEquals("D", RomanNumeralConverter.convertToRoman(500));
+    }
+
+    @Test
+    public void convertToRoman_Numeral1000_ReturnsM() {
+        assertEquals("M", RomanNumeralConverter.convertToRoman(1000));
+    }
 }
